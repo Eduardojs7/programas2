@@ -10,18 +10,19 @@
 
 using System;
 
-public class Program
+class Program
 {
-    public static void Main()
+    static void Main()
     {
         // Solicitar al usuario la temperatura en Celsius
-        Console.Write("Introduce la temperatura en Celsius: ");
+        Console.WriteLine("Ingrese la temperatura en grados Celsius:");
         double celsius = Convert.ToDouble(Console.ReadLine());
 
-        // Convertir a Fahrenheit
+        // Convertir Celsius a Fahrenheit
         double fahrenheit = (celsius * 9 / 5) + 32;
 
-        // Mostrar el resultado utilizando concatenación
-        Console.WriteLine(celsius + "°C es igual a " + fahrenheit + "°F");
+        // Mostrar el resultado en Fahrenheit
+        Console.WriteLine($"La temperatura en grados Fahrenheit es: {fahrenheit}°F");
     }
 }
+
